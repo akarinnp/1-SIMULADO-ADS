@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/*---------------------------------------CORES--------------------------------------------------------------- */
+:root{
+--cor1:#c0beb7;
+--cor2:#b2b0a7;
+--cor3:#2a272c;
+--cor4:#e3e1e4;
+--cor5:#e3dfca;
+--cor6:#7f7c67;
+--cor7:#7a7788;
+--cor8:#5e5156;
+--cor9: #676549;
+--cor10:#8f8189;
+--cor11:#545c54;
+
+}
+/*------------------------------------------------------MENU----------------------------------------------------*/
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    background-color: var(--cor3);
+    list-style: none;
+}
+
+
+
+.menu-logo {
+    height: 36px;
+    border-radius: 50%;
+}
+
+
+
+.menu-lista-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    justify-content: center;
+    margin: 15px 0 10px 0;
+}
+
+
+
+
+.menu-link{
+    text-decoration: none;
+    color: var(--cor4);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+
+
+
+.menu-link:hover{
+    transition: .5s;
+    text-shadow: 2px 2px 2px var(--cor4);
+    
+}
+
+/*-------------------------------------------------------NAV-------------------------------------------------*/
+
+
+.nav-logo{
+    width: 86px;
+
+    
+}
+
+
+
+
+.nav-ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+
+
+
+.nav-link{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--cor4);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+.nav-link:hover{
+    color: #55422f;
+    transition: .5s;
+}
+
+
+/*-----------------------------------------------------HEADER-------------------------------------------------*/
+
+.cabecalho{
+    
+    display: flex;
+    justify-content: left;/* eixo x */
+    align-items: center; /* eixo y */
+    text-align: left;
+
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    height: 80vh;
+    background-image: url(../img/samurai3.jpg);
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+
+    transition: .5s;
+    
+}
+
+
+
+.ajuste{
+    position: relative;
+    top: 5%;
+    left: 9%;
+}
+
+
+
+
+.fs-1{
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: .8;
+    text-shadow: 2px 2px 2px  var(--cor5), -2px -2px 2px var(--cor5);
+    border-bottom: 3px solid var(--cor3);
+}
+
+
+
+.fs-2{
+    font-size: 20px;
+    text-align: right;
+    font-family: serif;
+    line-height: 1.2;
+}
+
+/*-----------------------------------------------------MAIN-----------------------------------------------------*/
+body{
+    background-color:var(--cor4)
+}
+
+
+.berolinha{
+    font-size: small;
+    text-align: right;
+    margin: 10px 10 ;
+    width: 90%;
+    font-style: italic;
+}
+
+
+
+
+
+.inicio{
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+
+
+.inicio h2{
+    border-left:2px solid var(--cor3);
+    padding: 10px 0 15px 20px;
+    background-color: var(--cor2);
+    text-transform: uppercase;
+    margin: 50px 0;
+   
+    /* padding: 50px;
+    padding-left: 70px;
+    
+    background-color: #b2b0a7; */
+}
+
+
+
+
+.inicio p{
+    line-height: 2;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+
+
+.inicio h3 {
+    text-indent: 29px;
+    font-size: 20px;
+    padding: 17px 0;
+}
+
+
+/*-------------------------------------------------------CARDS---------------------------------------------------*/
+
+.cards {
+    text-align: center;
+    background-color: var(--cor1);
+    margin-top: 25px;
+    padding: 30px;
+}
+
+
+.containerDOScards {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.cards h3 {
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+
+
+
+
+
+.card-tamanho{
+    width: 30%;
+    text-align: justify;
+    text-indent: 50px;
+    border: 1px solid var(--cor8);
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+.cards-texto {
+    font-size: small;
+    line-height: 1.5;
+    padding: 10px;
+    
+}
+
+
+
+
+
+.card-footer {
+    padding: 15px 0;
+    text-align: right;
+    text-indent: 0;
+}
+
+
+
+
+.card-footer a {
+    margin-right: 10px;
+    padding: 10px 25px;
+    border-radius: 5px;
+
+    background-color: var(--cor3);
+    color: var(--cor5);
+
+    text-decoration: none;
+    font-size: small;
+}
+
+
+
+
+.card-footer a:hover {
+    transition: .3s;
+    border: 1px solid var(--cor3);
+    background-color: var(--cor11);
+}
+
+
+
+
+.card-img {
+    height: 25vh;
+}
+
+
+
+
+
+.img1 {
+    background-image: url(../img/neon-samurai1.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+.img2 {
+    background-image: url(../img/neon-samurai4.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.img3 {
+    background-image: url(../img/neon-samurai6.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+ 
+/* -------------------------------------------------------------FOOTER----------------------------------------- */
+
+.footer {
+    background-color: var(--cor3);
+    color: var(--cor5);
+    padding: 15px;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    font-size: 12px;
+    gap: 15px;
+    justify-content: right;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+
+/* ----------------------------------------------------------------RESPONSIVIDADE------------------------------------------------------------ */
+@media screen and (max-width:600px) {
+
+    .arumar{
+         display: none;
+     }
+ 
+     .card-tamanho{
+         width: 47%;
+     }
+     header {
+         transition: .5s;
+     }
+ 
+ }
+ 
+ 
+ @media screen and (max-width:595px) {
+   
+     .containerDOScards {
+         display: block;
+     
+     }
+ 
+     .arumar {
+         display: block;
+     }
+ 
+     .card-tamanho{
+         width: 100%;
+         margin:15px 0;
+     }
+ 
+     header {
+         background-position: top center;
+         transition: .5s;
+     }
+    }
+
+    @media screen and (max-width:234px) {
+   
+        .containerDOScards {
+            display: block;
+        
+        }
+    
+        .arumar {
+            display: block;
+        }
+    
+        .card-tamanho{
+            width: 90%;
+            margin:10px 10;
+        }
+    
+        header {
+            background-position: top center;
+            transition: .5s;
+        }
+       }
+
+    
+
+    
