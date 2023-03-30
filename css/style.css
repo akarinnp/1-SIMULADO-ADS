@@ -365,7 +365,7 @@ body{
 
 
 /* ----------------------------------------------------------------RESPONSIVIDADE------------------------------------------------------------ */
-@media screen and (max-width:600px) {
+@media(max-width:780px) {
 
     .arumar{
          display: none;
@@ -374,14 +374,24 @@ body{
      .card-tamanho{
          width: 47%;
      }
-     header {
+     .cabecalho                                                                                                                                                                                                                                                                                             {
+        background-position: top center;
          transition: .5s;
+         background-position: 100%;
      }
+     .fs-1{
+        font-size: 55px;
+     }
+     .fs-2{
+        font-size: 15px;
+     }
+
+
  
  }
  
  
- @media screen and (max-width:595px) {
+ @media(max-width:660px) {
    
      .containerDOScards {
          display: block;
@@ -397,13 +407,22 @@ body{
          margin:15px 0;
      }
  
-     header {
+     .cabecalho{
          background-position: top center;
          transition: .5s;
+         background-position: 50%;
      }
+    
+    .fs-1{
+       font-size: 50px;
+    }
+    .fs-2{
+       font-size: 10px;
     }
 
-    @media screen and (max-width:234px) {
+    }
+
+    @media(max-width:595px) {
    
         .containerDOScards {
             display: block;
@@ -419,9 +438,10 @@ body{
             margin:10px 10;
         }
     
-        header {
+        .cabecalho {
             background-position: top center;
             transition: .5s;
+            
         }
        }
 
